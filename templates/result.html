@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Style Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .color-swatch { width:32px; height:32px; display:inline-block; border-radius:7px; margin-right:6px; }
+        .no-products { background:#f8d7da; color:#842029; padding:9px 15px; border-radius:7px; }
+        .results-container { max-width:900px; margin:auto; padding:24px; background:rgba(30,32,58,0.7); border-radius:13px; box-shadow:0 2px 23px rgba(12,17,37,0.15); }
+        .action-btn { padding:10px 20px; border-radius:6px; cursor:pointer; font-size:1em; margin-right:8px; border:none; }
+        .action-btn.primary { background:#3366ff; color:#fff;}
+        .action-btn.secondary { background:#21c57b; color:#fff;}
+        .action-btn.tertiary { background:#fff; color:#333; border:2px solid #3366ff; }
+    </style>
+</head>
+<body class="results-page">
+    <!-- Animated background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-palette"></i>
+                    <span>AI Style Advisor</span>
+                </div>
+                <a href="/" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    New Analysis
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Results Container -->
+    <div class="results-container">
+        <div class="results-header">
+            <h1>Your Personalized Style Analysis</h1>
+            <p>Discover your perfect look with AI-powered recommendations</p>
+        </div>
+        <div class="results-grid">
+            <!-- Analysis Summary -->
+            <div class="result-card analysis-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-user-circle"></i> Your Profile</h2>
+                </div>
+                <div class="card-content">
+                    <div class="profile-info">
+                        <div class="uploaded-image">
+                            <img src="{{ results.uploaded_image }}" alt="Your Photo" id="uploadedPhoto" style="border-radius:7px;max-width:120px;max-height:120px;">
+                        </div>
+                        <div class="profile-details">
+                            <div class="detail-item"><span class="label">Gender:</span><span class="value">{{ results.gender }}</span></div>
+                            <div class="detail-item"><span class="label">Occasion:</span><span class="value">{{ results.occasion }}</span></div>
+                            <div class="detail-item"><span class="label">Season:</span><span class="value">{{ results.season }}</span></div>
+                            <div class="detail-item"><span class="label">Weather:</span><span class="value">{{ results.weather.temperature }}°C, {{ results.weather.weather }}</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skin Analysis -->
+            <div class="result-card skin-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-spa"></i> Skin Analysis</h2>
+                </div>
+                <div class="card-content">
+                    <div class="skin-analysis">
+                        <div class="skin-info">
+                            <div class="skin-tone">
+                                <h3>Skin Tone</h3>
+                                <div class="tone-result">
+                                    <div class="tone-indicator"></div>
+                                    <span>{{ results.skin_tone }}</span>
+                                </div>
+                            </div>
+                            <div class="skin-type">
+                                <h3>Skin Type</h3>
+                                <div class="type-result">
+                                    <i class="fas fa-droplet"></i>
+                                    <span>{{ results.skin_type|title }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Outfit Recommendation -->
+            <div class="result-card outfit-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-tshirt"></i> Recommended Outfit</h2>
+                </div>
+                <div class="card-content">
+                    <div class="outfit-recommendation">
+                        <div class="outfit-image">
+                            <img src="{{ results.outfit.image_url }}" alt="{{ results.outfit.outfit_name }}" 
+                                 onerror="this.src='/static/images/default_outfit.jpg'" style="border-radius:7px;max-width:120px;max-height:120px;">
+                        </div>
+                        <div class="outfit-details">
+                            <h3>{{ results.outfit.outfit_name }}</h3>
+                            <div class="color-palette">
+                                <h4>Perfect Colors for You</h4>
+                                <div class="colors">
+                                    {% for color in results.outfit.color_palette %}
+                                    <div class="color-swatch" style="background-color: {{ color }}"></div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="shopping-links">
+                                <h4>Shop Similar Styles</h4>
+                                <div class="shop-buttons">
+                                    <a href="{{ results.outfit.amazon_link }}" target="_blank" class="shop-btn amazon">
+                                        <i class="fab fa-amazon"></i> Amazon
+                                    </a>
+                                    <a href="{{ results.outfit.flipkart_link }}" target="_blank" class="shop-btn flipkart">
+                                        <i class="fas fa-shopping-cart"></i> Flipkart
+                                    </a>
+                                    <a href="{{ results.outfit.meesho_link }}" target="_blank" class="shop-btn meesho">
+                                        <i class="fas fa-store"></i> Meesho
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skincare Recommendations -->
+            <div class="result-card skincare-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-heart"></i> Skincare Recommendations</h2>
+                </div>
+                <div class="card-content">
+                    <div class="skincare-recommendations">
+                        {% if results.skincare %}
+                            {% for product in results.skincare %}
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <img src="{{ product.image }}" alt="{{ product.product_name }}" 
+                                         onerror="this.src='/static/images/default_product.jpg'" style="border-radius:7px;max-width:88px;">
+                                </div>
+                                <div class="product-info">
+                                    <h4>{{ product.product_name }}</h4>
+                                    <p class="brand">{{ product.brand }}</p>
+                                    <p class="description">{{ product.description }}</p>
+                                    <a href="{{ product.link }}" target="_blank" class="product-link">
+                                        <i class="fas fa-external-link-alt"></i> View Product
+                                    </a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        {% else %}
+                            <div class="no-products">
+                                <i class="fas fa-spa"></i>
+                                <p>No specific products found. Consult with a dermatologist for personalized skincare advice!</p>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="action-btn primary" onclick="window.print()">
+                <i class="fas fa-download"></i> Save Results
+            </button>
+            <button class="action-btn secondary" onclick="shareResults()">
+                <i class="fas fa-share"></i> Share
+            </button>
+            <a href="/" class="action-btn tertiary">
+                <i class="fas fa-redo"></i> Try Again
+            </a>
+        </div>
+    </div>
+
+        <!-- Chatbot – unchanged ---------------------------------------------------------------------------------------------->
+     <!-- Chatbot -->
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chatbot-header">
+                <div class="chatbot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chatbot-info">
+                    <h4>Style Assistant</h4>
+                    <span>Online</span>
+                </div>
+                <button class="chatbot-close" id="chatbotClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        Hello! I'm your AI style assistant. Ask me about skincare, outfits, or beauty tips! 💄✨
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatInput" placeholder="Ask me anything about style...">
+                <button id="sendMessage">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- ... ------------------------------------------------------------------------------------------------->
+
+
+    <script>
+        function shareResults() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'My AI Style Analysis Results',
+                    text: 'Check out my personalized style and skincare recommendations!',
+                    url: window.location.href
+                });
+            } else {
+                // Fallback for browsers that don't support Web Share API
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    alert('Results link copied to clipboard!');
+                });
+            }
+        }
+    </script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

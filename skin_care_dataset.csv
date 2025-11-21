@@ -1,0 +1,66 @@
+skin_type,product_name,description,brand,image,link
+dry,Hydrating Facial Cleanser,Gentle cream cleanser with ceramides and hyaluronic acid for dry skin,CeraVe,/static/images/cerave_cleanser.jpg,https://www.amazon.in/dp/B07C5XPXDC
+dry,Rich Moisturizing Cream,Intensive moisturizer with shea butter and glycerin,Neutrogena,/static/images/neutrogena_cream.jpg,https://www.amazon.in/dp/B08HRCNFCM
+dry,Hyaluronic Acid Serum,Powerful hydrating serum with multiple molecular weights,NOX DETOX,/static/images/ordinary_hyaluronic.jpg,https://www.amazon.in/dp/B0CQT7QJHS
+dry,Olay Age Defying Anti-Wrinkle Night Cream,Rich overnight treatment with peptides and ceramides,Olay,/static/images/olay_night_cream.jpg,https://www.amazon.in/dp/B000NUTUMQ
+dry,Herbals Gentle Exfoliating Walnut Scrub,Mild exfoliant with jojoba beads for sensitive dry skin,Himalaya,/static/images/aveeno_scrub.jpg,https://www.amazon.in/dp/B006G83SKY
+dry,Vitamin E Moisture Cream,Nourishing facial oil with vitamin E and rosehip,The Body Shop,/static/images/bodyshop_oil.jpg,https://www.amazon.in/dp/B074MFPP5X
+dry,Barrier Repair Balm,Intensive healing balm for very dry and cracked skin,Aquaphor,/static/images/aquaphor_balm.jpg,https://www.amazon.in/dp/B06XCPPRLK
+dry,Soothing Toner,Alcohol-free toner with rose water and glycerin,Thayers,/static/images/thayers_toner.jpg,https://www.amazon.in/dp/B07CF525NG
+dry,Argireline & Copper Peptide B�TOX Serum ,Concentrated ceramide treatment for barrier repair,Dr. Sheth's,/static/images/drjart_ceramide.jpg,https://www.amazon.in/dp/B0DZ21HM73
+dry,Ultra Moisturizing Lotion,Daily body and face lotion for extreme dryness,Eucerin,/static/images/eucerin_lotion.jpg,https://www.amazon.in/dp/B000VW1CRM
+oily,Foaming Gel Cleanser,Deep cleansing gel with salicylic acid for oily skin,Neutrogena,/static/images/neutrogena_gel.jpg,https://www.amazon.in/dp/B0DPM7JYMX
+oily,Oil-Free Moisturizer,Lightweight gel moisturizer that won't clog pores,POND'S,/static/images/PONDS_moisturizer.jpg,https://www.amazon.in/dp/B09Z6R5XSK
+oily,Niacinamide Serum,Oil control serum with 10% niacinamide and zinc,Minimalist,/static/images/Minimalist_niacinamide.jpg,https://www.amazon.in/dp/B0CW1M65YC
+oily,Clay Mask,Purifying clay mask with kaolin and bentonite,Glow & Go,/static/images/Glow_Go_mask.jpg,https://www.amazon.in/dp/B0DNMHRBK8
+oily,BHA Exfoliant,2% salicylic acid treatment for blackheads and pores,Minimalist,/static/images/Minimalist_bha.jpg,https://www.amazon.in/dp/B08GG9M863
+oily,Mattifying Primer,Oil-controlling primer with silica and dimethicone,Devriz,/static/images/Devriz_primer.jpg,https://www.amazon.in/dp/B0FXXVXYMX
+oily,Purifying Toner,Astringent toner with witch hazel and tea tree,Clean & Clear,/static/images/clean_clear_toner.jpg,https://www.amazon.in/dp/B00CI3HDMU
+oily,Deep Wrinkle Night Cream,Gentle retinol serum for acne-prone oily skin,RoC,/static/images/roc_retinol.jpg,https://www.amazon.in/dp/B00538B7CO
+oily,Oil Blotting Papers,Instant oil absorption papers for touch-ups,Clean & Clear,/static/images/blotting_papers.jpg,https://www.amazon.in/dp/B071W6G9ZP
+oily,Zinc Oxide Sunscreen,Non-comedogenic mineral sunscreen SPF 30,Elemnt,/static/images/Elemnt_sunscreen.jpg,https://www.amazon.in/dp/B09R4DKD3L
+normal,Daily Gentle Cleanser,Balanced cleanser suitable for all skin types,Cetaphil,/static/images/cetaphil_cleanser.jpg,https://www.amazon.in/dp/B07JGHSX4Z
+normal,Daily Moisturising Lotion,Lightweight daily moisturizer with SPF 15,Aveeno,/static/images/aveeno_moisturizer.jpg,https://www.amazon.in/dp/B00ET03FMC
+normal,Vitamin C Serum,Antioxidant serum with L-ascorbic acid,Dawn & Dusk,/static/images/Dawn_Dusk_vitamin_c.jpg,https://www.amazon.in/dp/B0FRZGNMNY
+normal,Beauty Glow Tonic,AHA/BHA toner for mild exfoliation,Pixi,/static/images/pixi_glow_tonic.jpg,https://www.amazon.in/dp/B00KH6QX08
+normal,Hydrating Face Mask,Weekly hydrating treatment with hyaluronic acid,Neutrogena,/static/images/neutrogena_mask.jpg,https://www.amazon.in/dp/B076V9PK87
+normal,Eye Cream,Anti-aging eye cream with peptides and caffeine,Olay,/static/images/olay_eye_cream.jpg,https://www.amazon.in/dp/B09682KPGX
+normal,Anthelios Sunscreen,Daily SPF 50 protection for face,La Roche-Posay,/static/images/laroche_sunscreen.jpg,https://www.amazon.in/dp/B09SLF5ZH8
+normal,Micellar Water,Gentle makeup remover and cleanser,Garnier,/static/images/garnier_micellar.jpg,https://www.amazon.in/dp/B071CDDG3H
+normal,Argan Oil,Lightweight facial oil with rosehip and argan,Josie Maran,/static/images/josie_maran_oil.jpg,https://www.amazon.in/dp/B001DJ9JJU
+normal,Advanced Serum,Restorative night treatment with peptides,No7,/static/images/no7_serum.jpg,https://www.amazon.in/dp/B01NCUXCIE
+combination,Deep Cleanser,Cleanser designed for T-zone and dry areas,Neutrogena,/static/images/neutrogena_combination.jpg,https://www.amazon.in/dp/B006LXDQRY
+combination,Balancing Moisturizer,Lightweight moisturizer that balances oil production,Lacto,/static/images/Lacto_balancing.jpg,https://www.amazon.in/dp/B0FND7FS5T
+combination,Mineral Face Moisturizer Liquid,Targeted treatment for different face areas,Vichy,/static/images/vichy_treatment.jpg,https://www.amazon.in/dp/B06XC5PQGL
+combination,Pore Minimizing Serum,Serum to reduce appearance of pores in T-zone,FIX Derma,/static/images/benefit_serum.jpg,https://www.amazon.in/dp/B0CWHBR1CT
+combination,Clay and Cream Mask,Dual mask for oily and dry areas,Freeman,/static/images/freeman_mask.jpg,https://www.amazon.in/dp/B00CZA87MQ
+combination,Balancing Toner,pH-balancing toner for combination skin,KAINE,/static/images/KAINEs_toner.jpg,https://www.amazon.in/dp/B09RFG7KDJ
+combination,Lightweight Sunscreen,Non-greasy SPF for combination skin types,Heliocare,/static/images/Heliocare_sunscreen.jpg,https://www.amazon.in/dp/B08HRJRK1Y
+combination,Spot Treatment,Targeted acne treatment for problem areas,Mario Badescu,/static/images/mario_spot_treatment.jpg,https://www.amazon.in/dp/B0017SWIU4
+combination,Hydrating Primer,Primer that hydrates dry areas and controls oil,Smashbox,/static/images/smashbox_hydrating_primer.jpg,https://www.amazon.in/dp/B00LW89Z9Q
+combination,Scrub 6 Fluid Ounce,Mild exfoliant suitable for mixed skin types,St. Ives,/static/images/stives_exfoliant.jpg,https://www.amazon.in/dp/B00GTC1HG4
+dry,Nat Habit Herbal Henna Paste,Natural henna paste delivering rich brown color while nourishing and strengthening hair.,Nat Habit ,/static/images/42.jpg,https://amzn.in/d/09pCWea
+dry,Aloe Foaming Cleanser,"Gentle foaming cleanser with soothing aloe that hydrates, calms irritation, and removes impurities without drying, suitable for all skin types.",AloeDerma,/static/images/43.jpg,https://www.amazon.in/gp/aw/d/B0FLJQWRVQ
+dry,Cetaphil Hydrating Face Wash,Gentle hydrating cleanser with niacinamide and vitamin B5.,Cetaphil,/static/images/44.jpg,https://www.amazon.in/dp/B01CCGW4OE
+normal,RAS Polish Up Face Wash,Gentle exfoliating cleanser that brightens and removes dead skin.,RAS Luxury Oils,/static/images/45.jpg,https://www.amazon.in/dp/B08WK6FZD4
+dry,Conscious?Chemist?Gentle Hydrating Face?Wash,Hydrating cleanser with hyaluronic acid & ceramides for dehydrated skin.,Conscious Chemist,/static/images/46.jpg,https://www.amazon.in/dp/B0BBRYWFLZ
+dry,Ounce Organics Gentle Hydrating Face Wash,Hydrating cleanser with niacinamide & hyaluronic acid.,Ounce Organics,/static/images/47.jpg,https://www.amazon.in/dp/B0F6KQJ5XS
+combination,Hydrating Glutathione Cleansing Wash,Gentle hydrating cleanser with glutathione � non-stripping.,LoveBydrashti,/static/images/48.jpg,https://www.amazon.in/dp/B0BF9NRWX1
+normal,RAS Polish Up Face Wash,"Powder-to-foam exfoliating cleanser with AHA, rice bran & rose.",RAS Luxury Oils,/static/images/49.jpg,https://www.amazon.in/dp/B08WK6FZD4
+normal,LANEIGE Hydrating Cleansing Gel,"Hydrating cleansing gel with hyaluronic acid for smooth, clean skin.",LANEIGE,/static/images/50.jpg,https://www.amazon.in/dp/B09THPY9ZT
+dry,CeraVe Moisturising Lotion,Lightweight lotion with ceramides & hyaluronic acid for dry skin.,CeraVe,/static/images/51.jpg,https://www.amazon.in/dp/B00YT1IZTO
+normal,The Face Shop Brightening Cleanser,Moisturizing brightening foam cleanser for radiant skin.,The Face Shop,/static/images/52.jpg,https://www.amazon.in/dp/B09P8SMW8M
+dry,Glow Recipe Avocado Cleanser,"Hydrating avocado cleanser for smooth, radiant skin.",Glow Recipe,/static/images/53.jpg,https://www.amazon.in/dp/B0CBT1NMVL
+normal,Numour Collagen Bombshell,Anti-ageing hydrolysed collagen moisturizer with LED & sonic tech.,Numour,/static/images/54.jpg,https://www.amazon.in/dp/B0FGDPC593
+dry,Uriage Eau?Thermale Hydrating Water Light Face Cream,"Lightweight, non-greasy hyaluronic-acid moisturizer for dry skin.",Uriage,/static/images/55.jpg,https://www.amazon.in/dp/B01EA4ZXHG
+normal,Spirituals Lightweight Hyaluronic Moisturizer,Lightweight moisturizer with hyaluronic acid and brightening effect.,Spirituals,/static/images/56.jpg,https://www.amazon.in/dp/B0DXF4TKW2
+oily,Numour Hyaluronic Hydration Massager,Hydrating cream with massager tool and hyaluronic acid for smoother skin.,Numour,/static/images/57.jpg,https://www.amazon.in/dp/B0FNKFL9BW
+oily,SKIN1004 Madagascar Centella Probio Cica-Enrich,Soothing gel-cream with centella & probiotics for calm skin.,SKIN1004,/static/images/58.jpg,https://www.amazon.in/dp/B0BTPGPK7H
+oily,Bioderma Friction-Less Cleansing Hydration,"Gentle cleansing lotion for sensitive skin, friction-free and hydrating.",Bioderma,/static/images/59.jpg,https://www.amazon.in/dp/B0DCZR72XH
+oily,Thalgo Revitalising Night Cream,Overnight replenishing night cream enriched with marine calcium,Thalgo,/static/images/60.jpg,https://www.amazon.in/dp/B0C5DYKN1J
+combination,SKIN1004 Madagascar Centella Probio-Cica Enrich,Soothing barrier-repair cream with fermented centella and ceramides.,SKIN1004,/static/images/61.jpg,https://www.amazon.in/dp/B0BTPGPK7H
+combination,HydraFrac Oat Extract Gentle Cleanser,Gentle oat-extract cleanser for hydrated sensitive skin.,HydraFrac,/static/images/62.jpg,https://www.amazon.in/dp/B0FPB6B8KB
+dry,Cetaphil Foaming Cream-to-Foam Cleanser,Cream-to-foam cleanser with niacinamide & aloe that hydrates and cleanses gently.,Cetaphil,/static/images/63.jpg,https://www.amazon.in/dp/B0DFHKK75G
+combination,Repechage Hydra Pure Night Cream,Rich night cream that deeply hydrates while you sleep.,Repechage,/static/images/64.jpg,https://www.amazon.in/dp/B09ZKC3HDR
+combination,Mizon Collagen Ingredients Balancing Anti-Wrinkle Cream,Anti-wrinkle cream with collagen and botanicals to balance skin tone.,Mizon,/static/images/65.jpg,https://www.amazon.in/dp/B09YXRXJ66
+combination,THANK YOU FARMER Miracle Anti-Aging Anti-Wrinkle Cream,"Pure botanical anti-aging cream for smoother, firmer skin.",THANK YOU FARMER,/static/images/66.jpg,https://www.amazon.in/dp/B0BTYWVB2Y
